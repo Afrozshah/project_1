@@ -29,15 +29,21 @@
     </site>
   </distributionManagement>
 
-  <build>
-    <plugins>
-      <plugin>
-        <artifactId>maven-compiler-plugin</artifactId>
-        <configuration>
-          <source>1.6</source>
-          <target>1.6</target>
-        </configuration>
-      </plugin>
+ <build>
+  <plugins>
+    <plugin>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-compiler-plugin</artifactId>
+      <version>3.8.1</version> <!-- Update this version to the latest compatible with your Maven version -->
+      <configuration>
+        <source>8</source> <!-- Adjust the source and target versions as needed -->
+        <target>8</target>
+      </configuration>
+    </plugin>
+    <!-- Other plugins -->
+  </plugins>
+</build>
+
 
       <plugin>
         <artifactId>maven-release-plugin</artifactId>
